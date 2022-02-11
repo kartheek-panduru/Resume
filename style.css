@@ -194,6 +194,7 @@ td, th{
     border-radius: 50%;
     width: 60px;
     height: 60px;
+    margin-right: 5px;
 }
 .logos .text{
     font-size: small;
@@ -207,4 +208,22 @@ td, th{
 
 .experience ul{
     padding-top: 10px;
+}
+
+@media all and (max-width: 998px) { 
+    .left-side {
+        flex-wrap: wrap;
+    } 
+    .left-side > div {  
+        flex-basis: 50%;  
+      }
+    .skills{
+        flex-wrap: wrap;
+    }
+    .skills > .software{
+        margin-top: 10px;
+    }
+    .logos{
+        gap: 5px;
+    }
 }
